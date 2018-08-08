@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NeuroAndroidDemo</string>
+
+    <!-- Sample menu -->
+    <string name="action_settings">Setting</string>
+
+    <!-- NeuroScale Drawer Items -->
+    <string name="drawer_neuroscale_main_activity_title">NeuroAndroid-Demo</string>
+
+    <string name="drawer_neuroscale_configure">Settings</string>
+    <string name="drawer_neuroscale_configure_desc">Account settings</string>
+    <string name="drawer_neuroscale_publish">Publish</string>
+    <string name="drawer_neuroscale_publish_drawer_desc">Publish data to neuroscale</string>
+    <string name="drawer_neuroscale_subscribe">Subscribe</string>
+    <string name="drawer_neuroscale_subscribe_desc">Subscribe data from neuroscale</string>
+    <string name="drawer_neuroscale_setting">User setting</string>
+    <string name="drawer_neuroscale_setting_desc">More advanced setting</string>
+    <string name="drawer_neuroscale_section_operations">NeuroScale Operatons</string>
+
+    <string name="TAG_CHOSE_PIPELINE">Select a Pipeline</string>
+    <string name="TAG_CHOSE_INSTANCE">Select a Instance</string>
+    <string name="TAG_DEFAULT_CONSOLE">Start a new console</string>
+    <string name="TAG_DEFAULT_BLUETOOTH">Select Bluetooth ID</string>
+    <string name="TAG_CHOSE_OUPUT_NODE">Select a Output</string>
+    <string name="TAG_CREATE_NEW">create new...</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
+</resources>

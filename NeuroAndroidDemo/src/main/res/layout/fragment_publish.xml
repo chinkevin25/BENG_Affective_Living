@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2015 AndroidPlot.com
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pipeline List"
+                android:layout_gravity="center_vertical"
+                android:autoText="false" />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/spPipeline"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instance List"
+                android:layout_gravity="center_vertical"
+                android:autoText="false" />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/spInstance"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muse List"
+                android:layout_gravity="center_vertical"
+                android:autoText="false" />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/spMuse"
+                android:layout_column="2" />
+        </TableRow>
+        <TableRow>
+            <!--<TextView-->
+                <!--android:text="Consol"-->
+                <!--android:id="@+id/textViewMsg"-->
+                <!--android:layout_weight="1"/>-->
+
+            <ImageView
+            android:id="@+id/imageviewPublish"
+            android:src="@drawable/button_blue_play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+            <!--<ImageButton-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/imageButtonPublish"-->
+                <!--android:src="@drawable/button_blue_play"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:scaleType="fitCenter"/>-->
+
+            <ListView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/listView_Message"
+                android:layout_weight="1"
+                android:transcriptMode="alwaysScroll"
+                android:stackFromBottom="true"/>
+
+        </TableRow>
+        <!--<TableRow>-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/image_Status"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/stop"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingLeft="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingTop="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingRight="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingBottom="5dp" />&ndash;&gt;-->
+
+            <!-- -->
+
+            <!--&lt;!&ndash;<Button&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Connect"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/btnConnect"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_column="2" />&ndash;&gt;-->
+            <!--&lt;!&ndash;<Button&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Disconnect"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/btnDisConnect"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_column="3" />&ndash;&gt;-->
+        <!--</TableRow>-->
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!--<Utils.ChartUtils.ZoomPanXYPlot-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:id="@+id/plotNeuroMuse"/>-->
+        <!--<com.androidplot.xy.XYPlot-->
+            <!--android:id="@+id/plotNeuroMuse"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--/>-->
+        <ExtraUtils.ChartPlot.ZoomPanXYPlot
+            android:id="@+id/plotNeuroMuse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+include ':NeuroAndroidDemo'
+include ':library'
